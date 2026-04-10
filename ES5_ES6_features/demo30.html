@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Set Object -1</h3>
+    <script>
+      let myset = new Set(); //allows unique entries
+      console.log(myset);
+      console.log(myset.size);
+      myset.add(10);
+      myset.add(20);
+      myset.add(30);
+      myset.add(40);
+      myset.add(50);
+      myset.add(30);
+      myset.add(40);
+
+      console.log(myset);
+      console.log(myset.size);
+
+      console.log("-----------");
+      console.log(myset.has(10));
+      console.log(myset.has(50));
+      console.log(myset.has(90));
+      console.log("-----------");
+      console.log(myset.delete(10));
+      console.log(myset.delete(90));
+      console.log(myset);
+      console.log(myset.size);
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

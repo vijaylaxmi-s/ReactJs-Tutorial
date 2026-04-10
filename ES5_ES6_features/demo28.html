@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Map Object -1</h3>
+    <script>
+      let mymap = new Map(); //key ,value pair
+      console.log(mymap);
+      console.log(mymap.size);
+      console.log("-----------");
+      mymap.set("sid", 101);
+      mymap.set("sname", "vsc");
+      mymap.set("email", "vsc@gmail.com");
+      mymap.set("phone", 12345);
+      console.log(mymap);
+      console.log(mymap.size);
+      console.log("-----------");
+      console.log(mymap.has("sname"));
+      console.log(mymap.has("phone"));
+      console.log(mymap.has("city"));
+      console.log("-----------");
+      console.log(mymap.get("sname"));
+      console.log(mymap.get("phone"));
+      console.log(mymap.get("city"));
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

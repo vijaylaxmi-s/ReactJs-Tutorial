@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Arguments and Rest Operator</h3>
+    <script>
+      function show(...myargs) {
+        console.log("---Show()----");
+        // console.log("lenght",arguments.length);
+        // for(let value of arguments){
+        //     console.log(value);
+
+        // }
+
+        console.log("lenght", myargs.length);
+        for (let value of myargs) {
+          console.log(value);
+        }
+      }
+      show();
+      show(12);
+      show(12, 13);
+      show(12, 13, 14, 15);
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

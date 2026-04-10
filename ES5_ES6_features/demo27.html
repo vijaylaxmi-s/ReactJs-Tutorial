@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Classes and Objects - 5</h3>
+    <script>
+      class Customer {
+        //constructor
+        constructor(cid, cname) { //4
+          console.log("I am 2-arg constructure");//5
+          this.cid = cid;//6
+          this.cname = cname;//7
+        }
+
+        //instance method
+        showCustomer = () => {
+          console.log("--showCustomer--");
+          console.log(this.cid); //this keyword is must for instance variable
+          console.log(this.cname);
+        };
+      }
+
+      class GoldCustomer extends Customer {
+        //constructor
+        constructor(cid, cname, email, phone) {//1
+          console.log("I am 4-arg constructure"); //2
+          super(cid,cname); //3
+          this.email = email;//8
+          this.phone = phone;//9
+        }
+
+         //instance method
+        showGoldCustomer = () => {
+          console.log("--showGoldCustomer--");
+          console.log(this.cid); 
+          console.log(this.cname);
+           console.log(this.email); 
+          console.log(this.phone);
+        };
+      }
+
+      let mycust = new GoldCustomer(101, "vsc", "vsc@gmail.com", 12345);
+      mycust.showCustomer();
+      mycust.showGoldCustomer();
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

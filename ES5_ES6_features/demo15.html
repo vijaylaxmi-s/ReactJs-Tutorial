@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>spread operator(...)-1</h3>
+    <script>
+      let arr = [1, 2, 3];
+      let arr1 = [arr, 4, 5]; //[[1,2,3],4,5]
+      console.log(arr1);
+
+      let arr2 = [...arr, 4, 5]; //[1,2,3,4,5] unpacks array
+      console.log(arr2);
+      console.log("--------------");
+      // ...arr behind logic
+      let myarr = new Array();
+      for (let value of arr) {
+        myarr.push(value);
+      }
+      myarr.push(4);
+      myarr.push(5);
+      console.log(myarr);
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>find() and findIndex() - Higher Order functions</h3>
+    <script>
+      let numArray = [10, 20, 30, 20, 30, 40, 50];
+      console.log(numArray);
+
+      const findNum1 = (num) => {
+        let searchNum = 20;
+        if (num == searchNum) {
+          return true;
+        } else {
+          return false;
+        }
+      };
+
+      let myValue = numArray.find(findNum1);
+      console.log(myValue);
+
+      let myIndex = numArray.findIndex(findNum1);
+      console.log(myIndex);
+
+      console.log("---------");
+
+      const findNum2 = (num) => {
+        let searchNum = 30;
+        if (num == searchNum) {
+          return true;
+        } else {
+          return false;
+        }
+      };
+
+      myValue = numArray.find(findNum2);
+      console.log(myValue);
+
+      myIndex = numArray.findIndex(findNum2);
+      console.log(myIndex);
+
+      console.log("---------");
+      let searchNum = 50;
+      myValue = numArray.find((num) => {
+        if (num == searchNum) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+      console.log(myValue);
+
+      myIndex = numArray.findIndex((num) => {
+        if (num == searchNum) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+      console.log(myIndex);
+
+      console.log("---------");
+
+      myValue = numArray.find((num) => num == searchNum);
+      console.log(myValue);
+
+      myIndex = numArray.findIndex((num) => num == searchNum);
+      console.log(myIndex);
+
+      console.log("---------");
+
+      myValue = numArray.find((num) => num == 20);
+      console.log(myValue);
+
+      myIndex = numArray.findIndex((num) => num == 30 );
+      console.log(myIndex);
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

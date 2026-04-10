@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Set Object -2</h3>
+    <script>
+      let myset = new Set(); //allows unique entries
+      console.log(myset);
+      console.log(myset.size);
+      myset.add(10);
+      myset.add(20);
+      myset.add(30);
+      myset.add(40);
+      myset.add(50);
+      myset.add(30);
+      myset.add(40);
+
+      console.log(myset);
+      console.log(myset.size);
+
+      console.log("------1-----");
+
+      for (let item of myset) {
+        console.log(item);
+      }
+      console.log("----2-------");
+
+      for (let item of myset.keys()) {
+        console.log(item);
+      }
+
+      console.log("----3-------");
+
+      for (let item of myset.values()) {
+        console.log(item);
+      }
+      console.log("----4-------");
+
+      for (let item of myset.entries()) {
+        console.log(item);
+      }
+      console.log("----5-------");
+
+      myset.forEach((value) => {
+        console.log(value);
+      });
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

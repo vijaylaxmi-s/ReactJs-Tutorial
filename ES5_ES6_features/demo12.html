@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>IndexOf and lastIndexOf functions</h3>
+    <script>
+      let numArray = [10, 20, 30, 20, 30, 40, 50];
+      console.log(numArray);
+
+      let myIndex = numArray.indexOf(20); //1
+      console.log(myIndex);
+      myIndex = numArray.indexOf(29); //-1
+      console.log(myIndex);
+      myIndex = numArray.lastIndexOf(30);//4
+      console.log(myIndex);
+      myIndex = numArray.lastIndexOf(20);//3
+      console.log(myIndex);
+      myIndex = numArray.lastIndexOf(50);//6
+      console.log(myIndex);
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

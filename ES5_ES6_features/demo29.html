@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Map Object -2</h3>
+    <script>
+      let mymap = new Map();
+
+      mymap.set("sid", 101);
+      mymap.set("sname", "vsc");
+      mymap.set("email", "vsc@gmail.com");
+      mymap.set("phone", 12345);
+      console.log(mymap);
+      console.log(mymap.size);
+
+      console.log("----1-------");
+
+      for (let [key, value] of mymap) {
+        console.log(key + " = " + value);
+      }
+      console.log("-----2------");
+
+      for (let key of mymap.keys()) {
+        console.log(key);
+      }
+      console.log("----3-------");
+
+      for (let value of mymap.values()) {
+        console.log(value);
+      }
+
+      console.log("----4-------");
+
+      for (let [key, value] of mymap.entries()) {
+        console.log(key + " = " + value);
+      }
+      console.log("----5-------");
+
+      mymap.forEach((value, key) => {
+        console.log(key + " = " + value);
+      });
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

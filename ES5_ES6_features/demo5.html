@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Array Extensions-2</h3>
+    <script>
+      function get(x) {
+        return x;
+      }
+
+      function square(x) {
+        return x * x;
+      }
+
+      function cube(x) {
+        return x * x * x;
+      }
+
+      var numArray1 = [1, 2, 3, 4, 5];
+      console.log(numArray1);
+      console.log("--------");
+
+      var sameArray = numArray1.map(get);
+      console.log(sameArray);
+      console.log("--------");
+
+      var squareArray = numArray1.map(square);
+      console.log(squareArray);
+      console.log("--------");
+
+      var cubeArray = numArray1.map(cube);
+      console.log(cubeArray);
+      console.log("--------");
+
+      function cubeString(x) {
+        return `cube of ${x} is ${x * x * x}`;
+      }
+
+      var cube = numArray1.map(cubeString);
+      console.log(cube)
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

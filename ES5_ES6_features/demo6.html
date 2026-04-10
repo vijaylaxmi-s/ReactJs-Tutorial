@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Array Extension-3</h3>
+    <script>
+      var numArray1 = [1, 2, 3, 4, 5];
+      console.log(numArray1);
+      console.log("--------");
+
+      var sameArray = numArray1.map((x) => x);
+      console.log(sameArray);
+      console.log("--------");
+
+      var squareArray = numArray1.map((x) => x * x);
+      console.log(squareArray);
+      console.log("--------");
+
+      var cubeArray = numArray1.map((x) => x * x * x);
+      console.log(cubeArray);
+      console.log("--------");
+
+      var cube = numArray1.map(x => `Cube of ${x} is ${x*x*x}`);
+      console.log(cube)
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Destructuring Demo - 5</h3>
+    <script>
+      const mystu = {
+        sid: 101,
+        sname: "vsc",
+        contactInfo: {
+          email: "vsc@gmail.com",
+          phone: 12345,
+        },
+        address: {
+          city: "Bangalore",
+          state: "KA",
+        },
+
+        courses: [
+          { cid: "C-501", cname: "java", trainer: "SD" },
+          { cid: "C-502", cname: "ReactJs", trainer: "AD" },
+          { cid: "C-503", cname: "Devops", trainer: "MD" },
+        ],
+      };
+
+      const { sid, sname } = mystu;
+      console.log(sid);
+      console.log(sname);
+      console.log("--------------");
+
+      const { email, phone } = mystu.contactInfo;
+      console.log(email);
+      console.log(phone);
+
+      console.log("----OR----------");
+
+      const { contactInfo } = mystu;
+      console.log(contactInfo.email);
+      console.log(contactInfo.phone);
+
+       console.log("--------------");
+
+      const { myjava, myreact, mydevops } = mystu.courses;
+      console.log(1,myjava);
+      console.log(myjava.cid);
+      console.log(myjava.cname);
+      console.log(myjava.trainer);
+      console.log("--------------");
+      console.log(2,myreact);
+      console.log(myreact.cid);
+      console.log(myreact.cname);
+      console.log(myreact.trainer);
+      console.log("--------------");
+      console.log(3,mydevops);
+       console.log(mydevops.cid);
+      console.log(mydevops.cname);
+      console.log(mydevops.trainer);
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Classes and Objects - 4</h3>
+    <script>
+      class Hello {
+        a = 10;
+        static b = 20;
+
+        constructor() {
+          console.log("I am default constructor");
+          this.c = 30;
+        }
+
+        //instance method
+        showHello = () => {
+          console.log("--showHello--");
+          console.log("a= ", this.a); //OK
+          console.log("b= ", this.b); //OK - make itas instance variable
+          console.log("b= ", Hello.b); //OK
+          // console.log("b= ", b); //error
+          console.log("c= ", this.c); //OK
+        };
+
+        static myshow() {
+          console.log("--I am static method---- myshow()");
+          console.log("a= ", this.a);
+          console.log("b= ", this.b);
+          console.log("b= ", Hello.b);
+          console.log("c= ", this.c);
+
+          //internal treats like this when static method is called
+          //console.log("a= ", Hello.a);//UN
+          //console.log("b= ", Hello.b);//20
+          //console.log("b= ", Hello.b);//20
+          //console.log("c= ", Hello.c);//UN
+        }
+      }
+
+      let hello = new Hello();
+      console.log("----calling showHello----------");
+      hello.showHello();
+
+      console.log("----way to access properties----------");
+      console.log("a= ", hello.a);
+      console.log("b= ", hello.b);
+      console.log("b= ", Hello.b);
+      console.log("c= ", hello.c);
+
+      console.log("----calling static method----------");
+      //hello.myshow();
+      Hello.myshow();
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Classes and Objects -1</h3>
+    <script>
+      class Customer {
+        cid = 101;
+        cname = "vsc";
+        email = "vsc@gmail.com";
+
+        //constructor
+        constructor() {
+          console.log("I am 0-arg constructure");
+        }
+
+        //instance method
+        showCustomer = () => {
+          console.log("--showCustomer--");
+
+          let cid = 1111;
+          console.log(cid);
+          console.log(this.cname); //this keyword is must for instance variable
+          console.log(this.email);
+        };
+      }
+
+      let c1 = new Customer();
+      c1.showCustomer();
+
+      let c2 = new Customer(1001);
+      c2.showCustomer();
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

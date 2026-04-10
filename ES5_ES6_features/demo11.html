@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Reduce function</h3>
+    <script>
+      let numArray = [1, 2, 3, 4, 5];
+      console.log(numArray);
+
+      const sumNum = (x, y) => {
+        return x + y;
+      };
+
+      const mulNum = (x, y) => {
+        return x * y;
+      };
+
+      // let res = numArray.reduce(sumNum);
+      // console.log(res);
+
+      // res = numArray.reduce(mulNum);
+      // console.log(res);
+
+      // res = numArray.reduceRight(sumNum);
+      // console.log(res);
+
+      // res = numArray.reduceRight(mulNum);
+      // console.log(res);
+
+      let res = numArray.reduce((x, y) => x + y);
+      console.log(res);
+
+      res = numArray.reduce((x, y) => x * y);
+      console.log(res);
+      console.log("------------");
+
+      res = numArray.reduce((x, y) => x + y, 10);
+      console.log(res);
+
+      res = numArray.reduce((x, y) => x * y, 10);
+      console.log(res);
+      console.log("------------");
+
+      res = numArray.reduceRight((x, y) => x + y);
+      console.log(res);
+
+      res = numArray.reduceRight((x, y) => x * y);
+      console.log(res);
+
+      console.log("------------");
+
+      res = numArray.reduceRight((x, y) => x + y, 0);
+      console.log(res);
+
+      res = numArray.reduceRight((x, y) => x * y, 1);
+      console.log(res);
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>
