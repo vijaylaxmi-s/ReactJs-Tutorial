@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Classes and Objects -2</h3>
+    <script>
+      class Student {
+        //constructor
+        // constructor() {
+        //   console.log("I am 0-arg constructure");
+        // }
+
+        constructor(sid, sname, email, phone) {
+          console.log("4-arg constructor")
+          this.sid = sid;
+          this.sname = sname;
+          this.email = email;
+          this.phone = phone;
+        }
+
+        //instance method
+        showStudent = () => {
+          console.log("--showStudent--");
+          console.log(this.sid);
+          console.log(this.sname);
+          console.log(this.email);
+          console.log(this.phone);
+        };
+      }
+
+      let s1 = new Student(101, "vsc", "vsc@gmail.com", 12345);
+      s1.showStudent();
+      console.log("--------------");
+      console.log(s1.sid);//we can call instance method and variables with object
+      console.log(s1.sname);
+      console.log(s1.email);
+      console.log(s1.phone);
+      console.log("--------------");
+      let s2 = new Student(102, "ssc", "ssc@gamil.com");
+      s2.showStudent();
+      console.log("--------------");
+      console.log(s2.sid);
+      console.log(s2.sname);
+      console.log(s2.email);
+console.log(s2.phone);
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Default Parameters</h3>
+    <script>
+      function findSum(a, b = 10) {
+        return a + b;
+      }
+
+      let res = findSum(10);
+      console.log("with default", res); //20
+
+      res = findSum(10, 20);
+      console.log("without default", res); //overrides so output is 30
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

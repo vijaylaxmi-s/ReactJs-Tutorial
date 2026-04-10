@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>JSON.stringify() Conversion</h3>
+    <script>
+      let mystudent = {
+        name: "vsc",
+        email: "vsc@gmail.com",
+        phone: 12345,
+        courseId: 101,
+      };
+
+      console.log(typeof mystudent); //object
+      let mystring = JSON.stringify(mystudent);
+      console.log(typeof mystring); //string
+      console.log(mystring); //string
+
+      sessionStorage.setItem("name", mystudent);
+      localStorage.setItem("name", mystudent);
+      sessionStorage.setItem("name", mystring);
+      localStorage.setItem("name", mystring);
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

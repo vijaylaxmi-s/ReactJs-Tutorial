@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>spread operator(...) - 3</h3>
+    <script>
+      const mystu = {
+        sid: 101,
+        sname: "vsc",
+        email: "vsc@gmail.com",
+        status: true,
+        courses: ["java", "ReactJs", "Devops"],
+        address: {
+          city: "Bangalore",
+          state: "KA",
+        },
+      };
+
+      //creating copy of an object //constructs new object
+      let mystu1 = {
+        ...mystu,
+      };
+
+      console.log(mystu);
+      console.log("-------------");
+      console.log(mystu1);
+      console.log("-------------");
+      console.log(mystu == mystu1); //F address comparison
+      console.log(mystu === mystu1); //F
+      console.log("-------------");
+      mystu.sname = "ssc";
+      mystu.email = "ssc@gmail.com";
+      console.log(mystu);
+      console.log("-------------");
+      console.log(mystu1);
+      console.log("-------------");
+      console.log(mystu == mystu1); //F address comparison
+      console.log(mystu === mystu1); //F
+      console.log("-------------");
+
+      let mystu2 = mystu; //assignment no reconstruction
+
+      console.log(mystu == mystu2); //T
+      console.log(mystu === mystu2); //T
+
+      console.log("-------------");
+      console.log(mystu2);
+      console.log("-------------");
+      console.log(mystu == mystu2); //F address comparison
+      console.log(mystu === mystu2); //F
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

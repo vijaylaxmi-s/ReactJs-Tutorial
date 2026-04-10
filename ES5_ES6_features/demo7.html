@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Arrow Functions Demo-1</h3>
+    <script>
+      let arr = ["Angular", "node", "react", "express"];
+      console.log(arr);
+
+      //forEach
+      function showArray1(value, index) {
+        console.log(value + " " + index);
+      }
+
+      arr.forEach(showArray1); //higner order functions
+      console.log("------------");
+     
+      //using arrow functions
+      arr.forEach((value, index) => console.log(value + " " + index));
+    
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

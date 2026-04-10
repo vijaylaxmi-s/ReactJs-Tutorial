@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Arrow Functions Demo-4</h3>
+    <script>
+      const showStudent = (name, email, phone) => {
+        let msg = `Name is ${name} , Email is ${email} and phone number is ${phone}`;
+        console.log(msg);
+      };
+
+      showStudent("vsc", "vsc@gmail.com", 12345);
+
+      const showArray = (arr) => {
+        for (let value of arr) {
+          console.log(value);
+        }
+      };
+
+      let arr = [10, 20, 30, 40, 50];
+      showArray(arr);
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

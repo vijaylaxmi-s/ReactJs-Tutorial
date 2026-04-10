@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>String and Date extensions</h3>
+    <script>
+      let mystr = "   vijay laxmi    ";
+      console.log(mystr);
+      console.log(mystr.length);
+      let mystr1 = mystr.trim();
+      console.log(mystr);
+      console.log(mystr.length);
+      console.log(mystr1);
+      console.log(mystr1.length);
+      console.log("---------");
+
+      let str = "Hello JLC Guys!!";
+      console.log(str.startsWith("Hello")); //T
+      console.log(str.startsWith("hello")); //F case sensitive
+      console.log(str.startsWith("guys")); //F
+      console.log(str.endsWith("hello"));//F
+      console.log(str.endsWith("Guys!!")); //T
+      console.log("---------");
+
+       console.log(str.includes("Hello"));// T
+       console.log(str.includes("jlc")); //F
+       console.log(str.includes("JLC")); //T
+       console.log(str.includes("Guys")); //T
+       console.log(str.includes("Guys!!")); //T
+       console.log(str.includes("aaa")); //F
+
+       console.log("---------");
+       let time  = Date.now();
+       console.log(time);
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Classes and Objects - 3</h3>
+    <script>
+      class Customer {
+        constructor() {
+          console.log("I am default constructor");
+          this.cid = 0;
+          this.cname = null;
+          this.phone = 0;
+        }
+
+        //instance method
+        showCustomer = () => {
+          console.log("--showCustomer--");
+          console.log(this.cid);
+          console.log(this.cname);
+          console.log(this.phone);
+        };
+
+        get customerId() {
+          return this.cid;
+        }
+
+        get customerName() {
+          return this.cname;
+        }
+
+        get customerPhone() {
+          return this.phone;
+        }
+
+        set customerId(cid) {
+          this.cid = cid;
+        }
+
+        set customerName(cname) {
+          this.cname = cname;
+        }
+        set customerPhone(phone) {
+          this.phone = phone;
+        }
+      }
+
+      let c1 = new Customer();
+      c1.showCustomer();
+    
+      console.log("----way to access properties----------");
+      console.log(c1.cid);
+      console.log(c1.cname);
+      console.log(c1.phone);
+    
+      console.log("---way to access getters-----------");
+      console.log(c1.customerId);
+      console.log(c1.customerName);
+      console.log(c1.customerPhone);
+
+      console.log("---way to set setters-----------");
+      c1.customerId = 101;
+      c1.customerName = "vsc";
+      c1.customerPhone = 12345;
+       console.log("----way to access properties----------");
+      console.log(c1.cid);
+      console.log(c1.cname);
+      console.log(c1.phone);  
+       console.log("---way to access getters-----------");
+      console.log(c1.customerId);
+      console.log(c1.customerName);
+      console.log(c1.customerPhone);
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

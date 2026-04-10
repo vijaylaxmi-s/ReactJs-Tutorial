@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>spread operator(...) - 2</h3>
+    <script>
+      const stu = {
+        sid: 101,
+        sname: "vsc",
+        email: "vsc@gmail.com",
+      };
+
+      // const mystu1 = {
+      //   stu,
+      //   phone: 12345,
+      //   city: "bangalore",
+      // };
+
+      // console.log(mystu1);
+      // console.log(mystu1.stu.sid);
+      // console.log(mystu1.stu.sname);
+      // console.log(mystu1.stu.email);
+      // console.log(mystu1.phone);
+      // console.log(mystu1.city);
+
+      const mystu2 = {
+        ...stu,
+        phone: 12345,
+        city: "bangalore",
+      };
+
+      console.log(mystu2);
+      console.log(mystu2.sid);
+      console.log(mystu2.sname);
+      console.log(mystu2.email);
+      console.log(mystu2.phone);
+      console.log(mystu2.city);
+
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

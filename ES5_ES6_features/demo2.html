@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>JSON.parse() Conversion</h3>
+    <script>
+      let mydata = '{"courseId":101, "courseName":"Java", "trainer":"VSC"}';
+
+      console.log(typeof mydata); //string
+      let mycourse = JSON.parse(mydata);
+      console.log(typeof mycourse); //object
+      console.log(mycourse.courseId);
+      console.log(mycourse.courseName);
+      console.log(mycourse.trainer);
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

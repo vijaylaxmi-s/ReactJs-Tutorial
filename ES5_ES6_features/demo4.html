@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <h3>Array Extensions-1</h3>
+    <script>
+      let arr = ["Angular", "node", "react", "express"];
+      console.log(arr);
+
+      //for in gives index
+      for (let index in arr) {
+        console.log(index + " " + arr[index]);
+      }
+      console.log("------------");
+
+      //for of gives value
+      for (let value of arr) {
+        console.log(value);
+      }
+      console.log("------------");
+      //forEach
+      function showArray1(value, index) {
+        console.log(value + " " + index);
+      }
+
+      arr.forEach(showArray1); //higner order functions
+      console.log("------------");
+      //forEach
+      function showArray2(value) {
+        console.log(value);
+      }
+
+      arr.forEach(showArray2); //higner order functions
+      console.log("------------");
+      //forEach
+      function showArray3(x, y, z) {
+        console.log(x + " " + y + " " + z);
+      }
+
+      arr.forEach(showArray3); //higner order functions
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>
